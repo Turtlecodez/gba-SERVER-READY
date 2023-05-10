@@ -4,6 +4,15 @@
 <script>
     !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
     posthog.init('phc_tK8xdLkugPGXevDiIRpOagu1aqOfc8xTwmiJSHg8Fek',{api_host:'https://app.posthog.com', "opt_in_site_apps": true })
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-43KVM32NJF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-43KVM32NJF');
 </script>  <!-- Also Goes on every page -->
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/home.css" />
@@ -44,15 +53,15 @@
     </div>
       <div class="ready-container">
         <img class="main-img" width="30%" height="20%" src="assets/GBA_2_main_2.png" alt="GBA 2.0 Logo"/>
-        <h1 class="ready-txt">Ready to Begin?</h1>
+        <h1 id="randomTitle" class="ready-txt">Welcome back!</h1>
         <div class="button-container">
-          <button class="singleplayer-button"><a href="main/singleplayer.html">Singleplayer</a></button>
-          <button class="multiplayer-button"><a href="https://discord.gg/math-study-934807331668099142">Alt Links</a></button>
-          <button class="singleplayer-button"><a href="https://cattn.github.io/gba-legacy/">Legacy GBA</a></button>
+          <button class="alt-button"><a href="main/singleplayer.html">Singleplayer</a></button>
+          <button class="alt-button"><a href="https://discord.gg/math-study-934807331668099142">Alt Links</a></button>
+          <button class="alt-button"><a href="https://cattn.github.io/gba-legacy/">Legacy GBA</a></button>
         </div>
         <div class="button-container">
           <button class="alt-button"><a href="main/play/testlaunch.html">Play ROM</a></button>
-          <button class="multiplayer-button"><a href="main/patch/index.html">Patch ROM</a></button>
+          <button class="alt-button"><a href="main/patch/index.html">Patch ROM</a></button>
           <button class="alt-button"><a href="https://github.com/Cattn/gba/issues/new?assignees=&labels=bug&template=bug_report.md&title=%5BBUG%5D">Report Issues</a></button>
         </div>
       </div>
@@ -62,4 +71,27 @@
         <div class="glow-3"></div>
   </body>
   <script src="main/scripts/nav.js"></script>
+  <script>
+    let possibleTitles = [
+    "Guess who's back, back again?",
+    "Welcome back!",
+    "I see you...",
+    "Ready to play?",
+    "Let's go!",
+    "You're back!",
+    "42",
+    "Cattn here!",
+    "Time to play!",
+    "Best GBA Emulator!",
+    "Best NES Emulator!",
+    "Best SNES Emulator!",
+    "Best N64 Emulator!",
+    "Best DS Emulator!",
+    "Wii when!?!??!?"
+];
+
+let randomTitle = possibleTitles[Math.floor(Math.random() * possibleTitles.length)];
+
+document.getElementById("randomTitle").innerHTML = randomTitle;
+  </script>
 </html>

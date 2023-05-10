@@ -1,10 +1,6 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta charset="UTF-8">
-
-<link rel="icon" href="../../../assets/GBA_2_Icon_ver3.png" type="image/x-icon"> 
 <script>
     !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
     posthog.init('phc_tK8xdLkugPGXevDiIRpOagu1aqOfc8xTwmiJSHg8Fek',{api_host:'https://app.posthog.com', "opt_in_site_apps": true })
@@ -17,17 +13,23 @@
   gtag('js', new Date());
 
   gtag('config', 'G-43KVM32NJF');
-</script>
-    <link rel="stylesheet" href="../../../styles/main.css" />
-    <link rel="stylesheet" href="../../../styles/consoles.css" />
+</script>  <!-- Also Goes on every page -->
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/home.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="description" content= "Cattn Github GBA Emulator. Free, online GBA Emulator with over 3000+ Games available Immediately! GitHub GBA Game website unblocked.">
+<meta name="robots" content= "index, follow">
+<meta name="keywords" content="gba, games, unblocked, play, free, gameboy, advance, emulator, roms, rom, cattn, github">
+<link rel="icon" href="assets/GBA_2_Icon_ver3.png" type="image/x-icon">
+<meta name="author" content="Cattn">
     <title>GBA 2.0</title>
   </head>
 
   <body>
-    <!-- Nav-bar, please place on all pages!-->
     <div class="topbar">
     <h1 class="topleft-name">GBA 2.0</h1>
-    <h1 id="pageTitle" class="page-title">Singleplayer - NHC</h1>
+    <h1 id="pageTitle" class="page-title">Home</h1>
     <div class="nav-button" id="backBtn">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
         <path fill-rule="evenodd" d="M9.53 2.47a.75.75 0 010 1.06L4.81 8.25H15a6.75 6.75 0 010 13.5h-3a.75.75 0 010-1.5h3a5.25 5.25 0 100-10.5H4.81l4.72 4.72a.75.75 0 11-1.06 1.06l-6-6a.75.75 0 010-1.06l6-6a.75.75 0 011.06 0z" clip-rule="evenodd" />
@@ -51,57 +53,47 @@
       <p>© 2023 - <a href="https://mathstudy.dev/">Math Study</a></p>
       <a href="https://github.com/cattn/gba/"><img class="ghLogo" src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" /></a>
     </div>
-     
-    <!-- Main Content -->
-
-    <!-- Search Bar Below... Will Add soon (Opens new page with Console-wide Search) -->
-
-
-       <!-- 
-    GameList (Using Custom HTML Tags) 
-    <rom-add console="consoleName" game="filename (no ext) ext="only provide if you want a special extension"">
-    </rom-add> 
-    -->
-    <div class="search-div">
-      <input class="search" type="text" id="console-search" placeholder="Search Console-Wide">
-      <button class="bubble-next" id="goSearch">
-        <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="52">
-          <path d="m375 816-43-43 198-198-198-198 43-43 241 241-241 241" fill="#00000"/>
-        </svg>
-      </button>
-    </div>
-    <div class="search-div">
-      <div class="bubble-next" id="backMultiple">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" style="color:black;" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="52" height="48" class="w-6 h-6">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M18.75 19.5l-7.5-7.5 7.5-7.5m-6 15L5.25 12l7.5-7.5" />
-        </svg>             
+      <div class="ready-container">
+        <img class="main-img" width="30%" height="20%" src="assets/GBA_2_main_2.png" alt="GBA 2.0 Logo"/>
+        <h1 id="randomTitle" class="ready-txt">Welcome back!</h1>
+        <div class="button-container">
+          <button class="singleplayer-button"><a href="main/singleplayer.html">Singleplayer</a></button>
+          <button class="multiplayer-button"><a href="https://discord.gg/math-study-934807331668099142">Alt Links</a></button>
+          <button class="singleplayer-button"><a href="https://cattn.github.io/gba-legacy/">Legacy GBA</a></button>
+        </div>
+        <div class="button-container">
+          <button class="alt-button"><a href="main/play/testlaunch.html">Play ROM</a></button>
+          <button class="multiplayer-button"><a href="main/patch/index.html">Patch ROM</a></button>
+          <button class="alt-button"><a href="https://github.com/Cattn/gba/issues/new?assignees=&labels=bug&template=bug_report.md&title=%5BBUG%5D">Report Issues</a></button>
+        </div>
       </div>
-      <div class="bubble-next" id="backPage">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" style="color:black;" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6" width="48">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
-        </svg>                  
-      </div>
-      <h1 class="page-text"> Page: 1 </h1>
-      <div class="bubble-next" id="forwardPage">
-        <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="52">
-          <path d="m375 816-43-43 198-198-198-198 43-43 241 241-241 241" fill="#00000"/>
-        </svg>
-      </div>
-      <div class="bubble-next" id="forwardMultiple">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6" width="52" height="48" style="color: black;">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
-        </svg>        
-      </div>
-    </div>
+      <!-- Glow Effects in the background -->
+        <div class="glow-1"></div>
+        <div class="glow-2"></div>
+        <div class="glow-3"></div>
+  </body>
+  <script src="main/scripts/nav.js"></script>
+  <script>
+    let possibleTitles = [
+    "Guess who's back, back again?",
+    "Welcome back!",
+    "I see you...",
+    "Ready to play?",
+    "Let's go!",
+    "You're back!",
+    "42",
+    "Cattn here!",
+    "Time to play!",
+    "Best GBA Emulator!",
+    "Best NES Emulator!",
+    "Best SNES Emulator!",
+    "Best N64 Emulator!",
+    "Best DS Emulator!",
+    "Wii when!?!??!?"
+];
 
+let randomTitle = possibleTitles[Math.floor(Math.random() * possibleTitles.length)];
 
-
-
-    </body>
-        <script src="../../scripts/elements.js"></script>
-    <script src="../../scripts/title.js"></script>
-    <script src="../../scripts/config.js"></script>
-    <script src="../../scripts/nav.js"></script>
-    <script src="../../scripts/console-search.js"></script>
-    <script src="../js/pagehandler.js"></script>
+document.getElementById("randomTitle").innerHTML = randomTitle;
+  </script>
 </html>
